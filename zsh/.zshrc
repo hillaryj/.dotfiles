@@ -84,7 +84,7 @@ export plugins=(aws gitfast ssh-agent terraform)
 export ZSH_DISABLE_COMPFIX="true"
 
 # Source the oh-my-zsh file, uncomment if installed
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 # ITerm2 shell integration, uncomment if installed
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
