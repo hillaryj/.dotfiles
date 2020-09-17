@@ -1,5 +1,16 @@
 #!/bin/zsh
+# shellcheck shell=bash
 
 # Set up node/NVM
 export NVM_DIR="$HOME/.nvm"
+
+# Set nvm directory
+# shellcheck source=/dev/null
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Load nvm bash completion
+# shellcheck source=/dev/null
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+
+# Set nvm in PATH for oh-my-zsh prefix issue
+# export PATH=$HOME/.nvm/versions/node/v12.16.3/bin:$PATH

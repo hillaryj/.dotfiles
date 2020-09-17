@@ -1,4 +1,5 @@
 #!/bin/zsh
+# shellcheck shell=bash
 
 # Set up CyHy docker environment variables
 export CYHY_CONF_DIR=/private/etc/cyhy

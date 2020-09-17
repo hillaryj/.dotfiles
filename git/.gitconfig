@@ -1,9 +1,9 @@
 [core]
 	excludesfile = ~/.gitignore_global
 [user]
-	name = User
-	email = username@example.com
-	signingkey = example
+	name = Hillary
+	email = hillaryaj@gmail.com
+	signingkey = 751D7F2A6430261E
 [commit]
 	gpgsign = true
 [merge]

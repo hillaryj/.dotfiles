@@ -1,8 +1,10 @@
 #!/bin/zsh
+# shellcheck shell=bash
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
+# shellcheck source=/dev/null
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -10,8 +12,8 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# Path to your oh-my-zsh installation, uncomment if installed.
-# export ZSH="$HOME/.oh-my-zsh"
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -82,10 +84,10 @@ export plugins=(aws gitfast ssh-agent terraform)
 export ZSH_DISABLE_COMPFIX="true"
 
 # Source the oh-my-zsh file, uncomment if installed
-# source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # ITerm2 shell integration, uncomment if installed
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 # User configuration
 
@@ -147,6 +149,7 @@ if [ -d ~/.zshrc.d ]
 then
   for f in ~/.zshrc.d/*
   do
+    # shellcheck disable=SC1090
     source "$f"
   done
 fi

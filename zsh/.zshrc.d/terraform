@@ -1,0 +1,5 @@
+#!/bin/zsh
+# shellcheck shell=bash
+
+# Set up Terraform - can remove after we upgrade to 0.13
+PATH="/usr/local/opt/terraform@0.12/bin:$PATH"
