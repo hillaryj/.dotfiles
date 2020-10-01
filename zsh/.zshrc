@@ -12,7 +12,7 @@ fi
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your oh-my-zsh installation, uncomment if installed.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
@@ -72,7 +72,7 @@ export ZSH_THEME="powerlevel10k/powerlevel10k"
 export HIST_STAMPS="yyyy-mm-dd"
 
 # Use another custom folder than $ZSH/custom - set to a folder in .dotfiles stowage
-export ZSH_CUSTOM=$HOME/.zsh/custom
+#export ZSH_CUSTOM=$HOME/.zsh/custom
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
