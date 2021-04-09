@@ -166,3 +166,4 @@ source ~/.bash_greeter
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+export PATH="/usr/local/opt/krb5/bin:/usr/local/opt/krb5/sbin:$PATH"
