@@ -20,6 +20,10 @@ alias grep='grep --color=auto --exclude-dir=.hg --exclude-dir=.svn --exclude-dir
 
 alias fuck='sudo $(history -p \!\!)'
 
+alias gitupdate="find . -maxdepth 1 -type d -exec sh -c '(cd {} && pwd && git pull)' ';'"
+alias ghupdate="gitupdate"
+alias gitrefresh="gitupdate"
+
 # Workaround for a Mac-specific issue that affects ansible
 # See https://github.com/ansible/ansible/issues/32499 for details
 alias packer='OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES packer'
