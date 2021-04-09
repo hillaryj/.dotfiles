@@ -1,11 +1,9 @@
 [core]
 	excludesfile = ~/.gitignore_global
 [user]
-	name = Hillary Jeffrey
-	email = hillary.jeffrey@cisa.dhs.gov
-	signingkey = FE1576AE46B17CFF
-[includeIf "gitdir:~/hillaryj/"]
-	path = ~/.gitconfig_personal
+	name = Hillary
+	email = hillaryaj@gmail.com
+	signingkey = 751D7F2A6430261E
 [commit]
 	gpgsign = true
 [merge]
