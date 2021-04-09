@@ -3,7 +3,7 @@
 
 # Set up CyHy docker environment variables
 export CYHY_CONF_DIR=/private/etc/cyhy
-export CYHY_CORE_IMAGE=ncats/cyhy-core
+export CYHY_CORE_IMAGE=cisa/cyhy-core
 
 # Set up CyHy aliases
-eval "$(docker run ncats/cyhy-core)"
+eval "$(docker run cisa/cyhy-core)"
