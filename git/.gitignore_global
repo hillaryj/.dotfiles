@@ -1,2 +1,28 @@
 *~
 .DS_Store
+
+## Python
+
+.mypy_cache
+.python-version
+__pycache__
+
+## GPG
+
+gpg/.gnupg/*.gpg
+gpg/.gnupg/*.kbx
+gpg/.gnupg/openpgp-revocs.d/
+gpg/.gnupg/private-keys-*.d/
+gpg/.gnupg/reader_*.status
+gpg/.gnupg/sshcontrol
+
+## SSH
+
+ssh/.ssh/authorized_keys
+ssh/.ssh/environment-*
+ssh/.ssh/id_*
+ssh/.ssh/known_hosts
+
+## Convenience
+
+*-nocommit.*
